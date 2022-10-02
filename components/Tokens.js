@@ -1,11 +1,11 @@
-import Image from "next/image";
+// import Image from "next/image";
 import styled from "styled-components";
 
 export default function Tokens({}) {
   return (
     <STokens>
       <div>
-        <Image
+        <img
           alt="Sucuro Asset Token"
           width="200rem"
           height="200rem"
@@ -20,7 +20,7 @@ export default function Tokens({}) {
       </div>
 
       <div>
-        <Image
+        <img
           alt="Sucuro Governance Token"
           width="200rem"
           height="200rem"
