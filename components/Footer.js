@@ -13,18 +13,6 @@ export default function Footer({}) {
         <Link href={"https://www.linkedin.com/company/sucuro/"}>
           <FaLinkedin />
         </Link>
-        {/* <Image
-          alt="Sucuro Asset Token"
-          height="50rem"
-          width="50rem"
-          src="https://uploads-ssl.webflow.com/62b122ba5bc41637dba39c91/62b2f957c62926808b42dfab_LinkedIn.svg"
-        />
-        <Image
-          alt="Sucuro Asset Token"
-          height="50rem"
-          width="50rem"
-          src="https://uploads-ssl.webflow.com/62b122ba5bc41637dba39c91/62b2f957c62926808b42dfab_LinkedIn.svg"
-        /> */}
       </div>
       <div>
         <p>
@@ -40,7 +28,7 @@ export default function Footer({}) {
           acquire or continue to hold).
         </p>
         <p>Copyright © 2021 Sucuro (Venture) Pty Ltd</p>
-        {/* <Link href={"/"}>Privacy Policy</Link> */}
+        <Link href={"/"}>Privacy Policy</Link>
       </div>
     </SFooter>
   );
