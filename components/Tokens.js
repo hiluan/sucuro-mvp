@@ -5,7 +5,7 @@ export default function Tokens({}) {
   return (
     <STokens>
       <div>
-        <img
+        <Image
           alt="Sucuro Asset Token"
           width="200rem"
           height="200rem"
@@ -20,7 +20,7 @@ export default function Tokens({}) {
       </div>
 
       <div>
-        <img
+        <Image
           alt="Sucuro Governance Token"
           width="200rem"
           height="200rem"

@@ -49,7 +49,7 @@ export default function Intro({}) {
         {isSearching && (
           <div className="search-dropdown">
             <h4>Stocks</h4>
-            {typeof searchResult === "undefined" ||
+            {/* {typeof searchResult === "undefined" ||
             searchResult.length === 0 ? (
               <p>Loading results...</p> // If input = 'dkfasdfasdfasdf' => show 'no match found' /////// deal with this later
             ) : (
@@ -64,7 +64,7 @@ export default function Intro({}) {
                   />
                 ))}
               </div>
-            )}
+            )} */}
           </div>
         )}
         <BsSearch />

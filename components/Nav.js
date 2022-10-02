@@ -11,7 +11,7 @@ export default function Nav() {
   return (
     <SNav>
       <SLogo>
-        <img
+        <Image
           alt="sucuro"
           width="50rem"
           height="50rem"
