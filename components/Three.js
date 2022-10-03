@@ -186,7 +186,7 @@ const S3Points = styled(motion.div)`
     padding: 2rem;
     margin: 1rem 2rem;
     border-radius: 1rem;
-    width: 768px;
+    max-width: 768px;
     transition: all ease 0.3s;
     box-shadow: var(--boxshadow01);
 

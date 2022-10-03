@@ -187,10 +187,10 @@ const S8Points = styled.div`
   transition: all 0.3s ease;
   margin-top: 1rem;
   margin-bottom: 4rem;
-  width: 80%;
+  width: 70%;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1rem;
 
   div {
