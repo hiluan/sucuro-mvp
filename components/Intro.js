@@ -128,7 +128,7 @@ const SSearch = styled.form`
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background-color: transparent;
+    background: transparent;
     width: 100%;
     font-size: 1.4rem;
     padding: 0 2rem 0 1rem;
@@ -143,7 +143,7 @@ const SSearch = styled.form`
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background-color: $color-dark-hover;
+    background: $color-dark-hover;
     border: none;
     outline: none;
     // box-shadow: inset 0 0 0 1px $color-dark-hover;
@@ -163,7 +163,7 @@ const SSearch = styled.form`
 `;
 
 const SIntroSub = styled.div`
-  background: white;
+  background: #f1f1f1;
   width: 100%;
   position: absolute;
   top: 70%;

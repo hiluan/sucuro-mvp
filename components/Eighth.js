@@ -2,6 +2,7 @@ import { BsPiggyBank, BsBuilding } from "react-icons/bs";
 import { FaRegHandshake } from "react-icons/fa";
 import { SMainBtn } from "../styles/SMainBtn";
 import styled from "styled-components";
+import Image from "next/image";
 
 export default function Eighth({}) {
   return (
@@ -20,7 +21,13 @@ export default function Eighth({}) {
       </S8Title>
       <S8Points>
         <div>
-          <BsBuilding />
+          <Image
+            alt="Rules"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/Rules.png"
+          />
           <h2>Rules</h2>
           <p>
             Sucuro Governance Token holders set the rules and attributes that
@@ -28,7 +35,13 @@ export default function Eighth({}) {
           </p>
         </div>
         <div>
-          <BsPiggyBank />
+          <Image
+            alt="Property sales"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/PropertySales.jpg"
+          />
           <h2>Property sales</h2>
           <p>
             Asset owners submit properties for sale. If the property meets the
@@ -37,7 +50,13 @@ export default function Eighth({}) {
           </p>
         </div>
         <div>
-          <FaRegHandshake />
+          <Image
+            alt="Tokens"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/Tokens.png"
+          />
           <h2>Tokens</h2>
           <p>
             Investors agree to buy tokens in a primary sale. When the value of
@@ -47,7 +66,13 @@ export default function Eighth({}) {
         </div>
 
         <div>
-          <FaRegHandshake />
+          <Image
+            alt="Management"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/Management.png"
+          />
           <h2>Management</h2>
           <p>
             A property manager is appointed to lease the property, collect rent
@@ -56,7 +81,13 @@ export default function Eighth({}) {
         </div>
 
         <div>
-          <FaRegHandshake />
+          <Image
+            alt="Sucuro Governance Token"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/PublicTransactions.png"
+          />
           <h2>Public transactions</h2>
           <p>
             Both investors and the general public can see the income and
@@ -64,7 +95,13 @@ export default function Eighth({}) {
           </p>
         </div>
         <div>
-          <FaRegHandshake />
+          <Image
+            alt="Sucuro Governance Token"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/MarketPricing.png"
+          />
           <h2>Market pricing</h2>
           <p>
             The market determines the price for tokens based on the value of the
@@ -72,7 +109,13 @@ export default function Eighth({}) {
           </p>
         </div>
         <div>
-          <FaRegHandshake />
+          <Image
+            alt="Sucuro Governance Token"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/Reinvestment.png"
+          />
           <h2>Reinvestment</h2>
           <p>
             The net rental income from properties owned is reinvested. Sucuro
@@ -81,7 +124,13 @@ export default function Eighth({}) {
           </p>
         </div>
         <div>
-          <FaRegHandshake />
+          <Image
+            alt="Sucuro Governance Token"
+            layout="responsive"
+            width="200rem"
+            height="200rem"
+            src="/OptionToExit.png"
+          />
           <h2>Option to exit</h2>
           <p>
             Investors can choose to sell some or all of their tokens on a coin
@@ -100,14 +149,15 @@ const SEighth = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   z-index: 1;
 
   span {
-    color: #6f1d1b;
+    color: var(--originalRedM);
   }
 
-  // background: url(../blockchain.jpg) no-repeat center center fixed;
+  // background: url(../blockchain.png) no-repeat center center fixed;
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
   // -o-background-size: cover;
@@ -115,7 +165,6 @@ const SEighth = styled.div`
 `;
 
 const S8Title = styled.div`
-  // background: white;
   width: 100%;
   text-align: center;
   display: flex;
@@ -129,34 +178,69 @@ const S8Title = styled.div`
   }
 
   h3 {
-    width: 768px;
+    max-width: 768px;
+    color: var(--third);
   }
 `;
 
 const S8Points = styled.div`
   transition: all 0.3s ease;
-  margin: 2rem 0;
-  width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  width: 80%;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 1rem;
 
   div {
+    position: relative;
     background: white;
     padding: 1rem;
-    margin: 1rem 0;
-    box-shadow: var(--boxshadow01);
-    border-radius: 1rem;
     transition: all ease 0.3s;
+    border-radius: 1rem;
+    box-shadow: none;
 
     &:hover {
-      box-shadow: none;
+      box-shadow: var(--boxshadow03);
     }
-  }
 
-  svg {
-    font-size: 2rem;
-    font-weight: 100;
+    img {
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 1rem;
+      transition: all ease 0.2s;
+    }
+
+    h2 {
+      text-align: right;
+      margin: 0.5rem 0.5rem 0 0;
+      z-index: 10;
+      font-size: 1.4rem;
+    }
+
+    p {
+      position: absolute;
+      right: 1rem;
+      left: 1rem;
+      bottom: 5rem;
+      padding: 0rem 1rem;
+      color: white;
+      font-size: 1.1rem;
+      z-index: 10;
+      opacity: 0;
+      transition: all ease 0.5s;
+      // text-shadow: 0px 0px 4px #000000;
+      // background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:hover {
+      p {
+        opacity: 1;
+      }
+      img {
+        filter: brightness(50%);
+      }
+    }
   }
 `;

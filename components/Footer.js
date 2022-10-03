@@ -64,4 +64,11 @@ const SSocial = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5rem;
+
+  svg {
+    transition: all ease 0.3s;
+  }
+  svg:hover {
+    color: var(--originalRed);
+  }
 `;

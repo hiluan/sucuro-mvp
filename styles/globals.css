@@ -7,8 +7,10 @@ body {
   background: #f1f1f1;
   --primary: #2d2d2d;
   --secondary: #535353;
-  --third: #737373;
+  --third: #939393;
   --originalRed: #6f1d1b;
+  /* Monochromatic */
+  --originalRedM: #982825; 
   --boxshadow01: 0 0 30px rgba(0, 0, 0, 0.1) ;
   --boxshadow03: 0 0 30px rgba(0, 0, 0, 0.3) ;
   --boxshadow05: 0 0 30px rgba(0, 0, 0, 0.5) ;

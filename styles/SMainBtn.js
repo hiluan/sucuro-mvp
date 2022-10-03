@@ -11,7 +11,7 @@ export const SMainBtn = styled.button`
   transition: all ease 0.3s;
 
   &:hover {
-    background: #6f1d1b;
+    background: #982825;
     // var(--primary);
   }
 `;
