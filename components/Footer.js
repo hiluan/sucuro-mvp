@@ -40,6 +40,7 @@ const SFooter = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 2rem 0;
+  z-index: 10;
 
   div {
     width: 60%;

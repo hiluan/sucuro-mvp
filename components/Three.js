@@ -143,7 +143,7 @@ const SThree = styled(motion.div)`
   margin-top: -1rem;
 
   span {
-    color: var(--originalRedM);
+    color: var(--highlight);
   }
 
   background: url(../blockchain.jpg) no-repeat center center fixed;

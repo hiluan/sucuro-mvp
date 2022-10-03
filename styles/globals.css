@@ -11,6 +11,7 @@ body {
   --originalRed: #6f1d1b;
   /* Monochromatic */
   --originalRedM: #982825; 
+  --highlight: #cc7662;
   --boxshadow01: 0 0 30px rgba(0, 0, 0, 0.1) ;
   --boxshadow03: 0 0 30px rgba(0, 0, 0, 0.3) ;
   --boxshadow05: 0 0 30px rgba(0, 0, 0, 0.5) ;

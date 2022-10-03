@@ -151,10 +151,10 @@ const SEighth = styled.div`
   align-items: center;
   margin-top: 10rem;
   margin-bottom: 5rem;
-  z-index: 1;
+  z-index: 11;
 
   span {
-    color: var(--originalRedM);
+    color: var(--highlight);
   }
 
   // background: url(../blockchain.png) no-repeat center center fixed;
