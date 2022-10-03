@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Intro from "../components/Intro";
 import styled from "styled-components";
-import HowsThree from "../components/HowsThree";
-import HowsEighth from "../components/HowsEighth";
+import Three from "../components/Three";
+import Eighth from "../components/Eighth";
 import Tokens from "../components/Tokens";
 import Footer from "../components/Footer";
 
@@ -17,8 +17,8 @@ export default function Home() {
 
       <main>
         <Intro />
-        <HowsThree />
-        <HowsEighth />
+        <Three />
+        <Eighth />
         <Tokens />
         <Footer />
       </main>

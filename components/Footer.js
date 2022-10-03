@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
 import { FaTwitterSquare, FaLinkedin } from "react-icons/fa";
@@ -6,14 +5,14 @@ import { FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 export default function Footer({}) {
   return (
     <SFooter>
-      <div>
+      <SSocial>
         <Link href={"https://twitter.com/sucuroco"}>
           <FaTwitterSquare />
         </Link>
         <Link href={"https://www.linkedin.com/company/sucuro/"}>
           <FaLinkedin />
         </Link>
-      </div>
+      </SSocial>
       <div>
         <p>
           The information on this website is intended to be general in nature
@@ -28,14 +27,41 @@ export default function Footer({}) {
           acquire or continue to hold).
         </p>
         <p>Copyright © 2021 Sucuro (Venture) Pty Ltd</p>
-        <Link href={"/"}>Privacy Policy</Link>
+        <p>
+          <Link href={"/"}>Privacy Policy</Link>
+        </p>
       </div>
     </SFooter>
   );
 }
-
+//
 const SFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+
+  div {
+    width: 60%;
+  }
+
   svg {
     font-size: 2rem;
   }
+
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  a {
+    color: var(--originalRed);
+  }
+`;
+
+const SSocial = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 `;

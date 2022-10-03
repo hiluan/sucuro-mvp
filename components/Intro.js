@@ -1,25 +1,24 @@
-// import introVid from './lib/introVid.mp4'
 import styled from "styled-components";
 import { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import { SMainBtn } from "../styles/SMainBtn";
 
 export default function Intro({}) {
-  const [isSearching, setIsSearching] = useState(false);
-  const [searchInput, setSearchInput] = useState("");
-  const [searchResultTop6, setSearchResultTop6] = useState([]);
-  const searchInputUpperCase = searchInput.toUpperCase();
+  //   const [isSearching, setIsSearching] = useState(false);
+  //   const [searchInput, setSearchInput] = useState("");
+  //   const [searchResultTop6, setSearchResultTop6] = useState([]);
+  //   const searchInputUpperCase = searchInput.toUpperCase();
 
-  const getInput = (e) => {
-    // console.log(resultSymbolLookupData(e.target.value));
-    setSearchInput(e.target.value);
-    dispatch(searchAction(e.target.value));
-    if (e.target.value !== "") {
-      setIsSearching(true);
-    } else {
-      setIsSearching(false);
-    }
-  };
+  //   const getInput = (e) => {
+  //     // console.log(resultSymbolLookupData(e.target.value));
+  //     setSearchInput(e.target.value);
+  //     dispatch(searchAction(e.target.value));
+  //     if (e.target.value !== "") {
+  //       setIsSearching(true);
+  //     } else {
+  //       setIsSearching(false);
+  //     }
+  //   };
 
   return (
     <SIntro>
@@ -29,27 +28,27 @@ export default function Intro({}) {
       </h1>
       <SSearch action="">
         <input
-          className={isSearching ? "search-input inactive" : "search-input"}
+          //   className={isSearching ? "search-input inactive" : "search-input"}
           placeholder="Search Assets"
-          onChange={getInput}
+          //   onChange={getInput}
           type="text"
-          value={searchInput}
-          onBlur={() => setIsSearching(false)}
-          onKeyDown={
-            (e) => (e.key === 27 ? setIsSearching(true) : setIsSearching(false)) // Press ESC to hide DropDown
-          }
+          //   value={searchInput}
+          //   onBlur={() => setIsSearching(false)}
+          //   onKeyDown={
+          // (e) => (e.key === 27 ? setIsSearching(true) : setIsSearching(false)) // Press ESC to hide DropDown
+          //   }
           // if string.length in input > -1 when click on input => show dropdown
-          onClick={(e) =>
-            // console.log(e.target.value.length)
-            e.target.value.length < 1
-              ? setIsSearching(false)
-              : setIsSearching(true)
-          }
+          //   onClick={(e) =>
+          // console.log(e.target.value.length)
+          // e.target.value.length < 1
+          //   ? setIsSearching(false)
+          //   : setIsSearching(true)
+          //   }
         />
-        {isSearching && (
+        {/* {isSearching && (
           <div className="search-dropdown">
             <h4>Stocks</h4>
-            {/* {typeof searchResult === "undefined" ||
+            {typeof searchResult === "undefined" ||
             searchResult.length === 0 ? (
               <p>Loading results...</p> // If input = 'dkfasdfasdfasdf' => show 'no match found' /////// deal with this later
             ) : (
@@ -64,13 +63,13 @@ export default function Intro({}) {
                   />
                 ))}
               </div>
-            )} */}
+            )}
           </div>
-        )}
+        )} */}
         <BsSearch />
       </SSearch>
       <SVideo autoPlay loop muted>
-        <source src={"/introVid.mp4"} type="video/mp4" />
+        <source src={"/intro.mp4"} type="video/mp4" />
       </SVideo>
       <SIntroSub>
         <h2>Real assets. No middlemen. More trust.</h2>
@@ -84,7 +83,7 @@ const SIntro = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 
   display: flex;
   align-items: center;
@@ -103,10 +102,11 @@ const SIntro = styled.div`
 const SVideo = styled.video`
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: -10rem;
   min-width: 100%;
   min-height: 100%;
   z-index: 1;
+  //   z-indexKP0-O=-POLIK8JUKHJYHTG87F6D5SDA4S3a3wq : 2;
 `;
 
 const SSearch = styled.form`
@@ -130,13 +130,11 @@ const SSearch = styled.form`
     -webkit-box-sizing: border-box;
     background-color: transparent;
     width: 100%;
-    // max-width: 30rem;
     font-size: 1.4rem;
     padding: 0 2rem 0 1rem;
     padding-right: 2rem;
     margin: 1rem 0rem;
     border: none;
-    // box-shadow:  0 0 0 1px rgba(0, 0, 0, 0.3);
     border-radius: 0.3rem;
     color: var(--third);
   }
@@ -169,7 +167,7 @@ const SIntroSub = styled.div`
   width: 100%;
   position: absolute;
   top: 70%;
-  height: 40vh;
+  height: 30vh;
   left: 0;
   z-index: 2;
   display: flex;
@@ -182,22 +180,5 @@ const SIntroSub = styled.div`
     padding: 2rem;
     font-size: 2rem;
     color: var(--secondary);
-  }
-
-  button {
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1rem 1.5rem;
-    width: 20%;
-    font-size: 1.2rem;
-    transition: all ease 0.3s;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background: #6f1d1b;
-    // var(--primary);
   }
 `;
