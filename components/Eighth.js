@@ -26,7 +26,7 @@ export default function Eighth({}) {
             layout="responsive"
             width="200rem"
             height="200rem"
-            src="/Rules.png"
+            src="/Rules.jpg"
           />
           <h2>Rules</h2>
           <p>
@@ -55,7 +55,7 @@ export default function Eighth({}) {
             layout="responsive"
             width="200rem"
             height="200rem"
-            src="/Tokens.png"
+            src="/Tokens.jpg"
           />
           <h2>Tokens</h2>
           <p>
@@ -71,7 +71,7 @@ export default function Eighth({}) {
             layout="responsive"
             width="200rem"
             height="200rem"
-            src="/Management.png"
+            src="/Management.jpg"
           />
           <h2>Management</h2>
           <p>
@@ -86,7 +86,7 @@ export default function Eighth({}) {
             layout="responsive"
             width="200rem"
             height="200rem"
-            src="/PublicTransactions.png"
+            src="/PublicTransactions.jpg"
           />
           <h2>Public transactions</h2>
           <p>
@@ -100,7 +100,7 @@ export default function Eighth({}) {
             layout="responsive"
             width="200rem"
             height="200rem"
-            src="/MarketPricing.png"
+            src="/MarketPricing.jpg"
           />
           <h2>Market pricing</h2>
           <p>
@@ -114,7 +114,7 @@ export default function Eighth({}) {
             layout="responsive"
             width="200rem"
             height="200rem"
-            src="/Reinvestment.png"
+            src="/Reinvestment.jpg"
           />
           <h2>Reinvestment</h2>
           <p>
@@ -129,7 +129,7 @@ export default function Eighth({}) {
             layout="responsive"
             width="200rem"
             height="200rem"
-            src="/OptionToExit.png"
+            src="/OptionToExit.jpg"
           />
           <h2>Option to exit</h2>
           <p>
@@ -157,7 +157,7 @@ const SEighth = styled.div`
     color: var(--highlight);
   }
 
-  // background: url(../blockchain.png) no-repeat center center fixed;
+  // background: url(../blockchain.jpg) no-repeat center center fixed;
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
   // -o-background-size: cover;
